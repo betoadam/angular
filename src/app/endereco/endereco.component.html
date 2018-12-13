@@ -1,0 +1,27 @@
+<h1 class="text-center">Endereço</h1>
+<div class="container">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th>ID</th>
+            <th>Rua</th>
+            <th>Numero</th>
+            <th>CEP</th>
+            <th>Estado</th>
+            <th>Pais</th>
+          </tr>
+        </thead>
+        <tr *ngFor="let a of endereco">
+          <td>{{ a.id }}</td>
+          <td>{{ a.street }}</td>
+          <td>{{ a.number }}</td>
+          <td>{{ a.cep }}</td>
+          <td>{{ a.state }}</td>
+          <td>{{ a.country }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

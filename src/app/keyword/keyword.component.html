@@ -1,0 +1,22 @@
+<h1 class="text-center">Keywords</h1>
+<hr />
+<a class="btn btn-primary" href="/keyword/new">Nova Keyword</a>
+<hr />
+<div class="container">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+          </tr>
+        </thead>
+        <tr *ngFor="let k of keyword">
+          <td>{{ k.id }}</td>
+          <td>{{ k.name }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

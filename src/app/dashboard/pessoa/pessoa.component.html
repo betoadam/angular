@@ -1,0 +1,21 @@
+<h1 class="text-center">Pessoas</h1>
+<div class="container">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Login</th>
+          </tr>
+        </thead>
+        <tr *ngFor="let pessoa of pessoas">
+          <td>{{ pessoa.id }}</td>
+          <td>{{ pessoa.nome }}</td>
+          <td>{{ pessoa.login }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

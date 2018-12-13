@@ -1,0 +1,23 @@
+<h1 class="text-center">Document Listing</h1>
+<hr />
+<a class="btn btn-primary" href="/document/new">Novo Documento</a>
+<hr />
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>ID</th>
+      <th>Description</th>
+      <th>File Name</th>
+      <th>Date</th>
+      <th>Categoria</th>
+    </tr>
+  </thead>
+
+  <tr *ngFor="let document of documents">
+    <td>{{ document.id }}</td>
+    <td>{{ document.description }}</td>
+    <td>{{ document.fileName }}</td>
+    <td>{{ document.date }}</td>
+    <td>{{ document.categoria }}</td>
+  </tr>
+</table>

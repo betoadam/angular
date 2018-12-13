@@ -1,0 +1,19 @@
+<h1 class="text-center">Categorias</h1>
+<div class="container">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+          </tr>
+        </thead>
+        <tr *ngFor="let c of categorias">
+          <td>{{ c.id }}</td>
+          <td>{{ c.name }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
